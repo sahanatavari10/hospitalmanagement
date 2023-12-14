@@ -1,0 +1,159 @@
+<!--tomcat username: sahana password: 1019 -->
+<!--mysql username: root password: 1019 -->
+<html>
+    <head>
+        <title>HOSPITAL MANAGEMENT SYSTEM</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+      
+        <form method="POST" action="Patient">
+            
+            <table width="400px" border="1">
+                <tr>
+                    <td colspan="2"><h1>INSERT PATIENT</h1> </td>
+                    
+                </tr>
+
+                <tr>
+                    <td>Patient ID</td>
+                    <td><input type="text" name="pid" id="pid"></td>
+                </tr>
+                
+                <tr>
+                    <td>Firstname</td>
+                    <td><input type="text" name="pfname" id="pfname"></td>
+                </tr>
+                
+                <tr>
+                    <td>Lastname</td>
+                    <td><input type="text" name="plname" id="plname"></td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2"> <input type="submit" value="submit"></td>
+                 
+                </tr>
+                
+                
+            </table>
+ 
+            
+        </form>
+        
+        <form method="POST" action="doctor">
+            
+            <table width="400px" border="1">
+                <tr>
+                    <td colspan="2"><h1>INSERT DOCTOR</h1> </td>
+                    
+                </tr>
+
+                <tr>
+                    <td>Doctor ID</td>
+                    <td><input type="text" name="did" id="did"></td>
+                </tr>
+                
+                <tr>
+                    <td>Firstname</td>
+                    <td><input type="text" name="dfname" id="dfname"></td>
+                </tr>
+                
+                <tr>
+                    <td>Lastname</td>
+                    <td><input type="text" name="dlname" id="dlname"></td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2"> <input type="submit" value="submit"></td>
+                 
+                </tr>
+                
+                
+            </table>
+ 
+            
+        </form>
+        
+        <form method="POST" action="appointment">
+            
+            <table width="400px" border="1">
+                <tr>
+                    <td colspan="2"><h1>SCHEDULE APPOINTMENT</h1> </td>
+                    
+                </tr>
+
+                <tr>
+                    <td>Appointment ID</td>
+                    <td><input type="text" name="aid" id="aid"></td>
+                </tr>
+                
+                <tr>
+                    <td>Appointment date</td>
+                    <td><input type="text" name="adate" id="adate"></td>
+                </tr>
+                
+                <tr>
+                    <td>Doctor ID</td>
+                    <td><input type="text" name="did" id="did"></td>
+                </tr>
+                
+                <tr>
+                    <td>Patient ID</td>
+                    <td><input type="text" name="pid" id="pid"></td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2"> <input type="submit" value="submit"></td>
+                 
+                </tr>
+                
+                
+            </table>
+ 
+            
+        </form>
+        
+        <form method="POST" action="Bill">
+            
+            <table width="400px" border="1">
+                <tr>
+                    <td colspan="2"><h1>INSERT BILL</h1> </td>
+                    
+                </tr>
+
+                <tr>
+                    <td>Bill ID</td>
+                    <td><input type="text" name="bid" id="bid"></td>
+                </tr>
+                
+                <tr>
+                    <td>Amount</td>
+                    <td><input type="text" name="amt" id="amt"></td>
+                </tr>
+                
+                <tr>
+                    <td>Patient ID</td>
+                    <td><input type="text" name="pid" id="pid"></td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2"> <input type="submit" value="submit"></td>
+                 
+                </tr>
+                
+                
+            </table>
+ 
+            
+        </form>
+        
+        <p><a href="viewpatient">View Patients</a></p>
+        <p><a href="viewdoctor">View Doctors</a></p>
+        <p><a href="viewbilling">View Bill Details</a></p>
+        <p><a href="viewappointment">View appointment Details</a></p>
+        
+
+    </body>
+</html>
